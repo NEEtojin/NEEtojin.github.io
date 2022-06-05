@@ -1,7 +1,6 @@
 ---
 layout: page_markdown
 title: "NEEtojin"
-permalink: /blog/
 ---
 
 # 메모장
