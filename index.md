@@ -1,8 +1,3 @@
----
-layout: page_markdown
-title: "NEEtojin"
----
-
 # 메모장
 개발에 대하여 메모하는 페이지 입니다.
 
