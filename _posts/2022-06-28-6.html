@@ -1,0 +1,29 @@
+---
+layout: post
+author: NEEtojin
+title: "LeetCode-1657. Determine if Two Strings Are Close"
+date: 2022-06-28
+categories: Python
+tags: LeetCode Python Counter count
+---
+<pre>
+class Solution:
+    def closeStrings(self, word1: str, word2: str) -> bool:
+        s1=set(word1)
+        s2=set(word2)
+        if s1==s2:        
+            return sorted([word1.count(i) for i in s1])==sorted([word2.count(i) for i in s2])
+        return False
+
+
+class Solution1:
+    def closeStrings(self, word1: str, word2: str) -> bool:
+        count1 = collections.Counter(word1)
+        count2 = collections.Counter(word2)
+        return count1.keys() == count2.keys() and sorted(count1.values()) == sorted(count2.values())
+        
+Solution은 TC가 O(n)인 count를 최대 26번 썻고, TC가 O(26 log26) 인 sort를 썻으므로 전체의 TC가 26*C1*O(n)이다.
+Solution1은 TC가 O(n)인 Counter를 두번 썻고, TC가 O(26 log26) 인 sort를 썻으므로 전체의 TC가 2*C2*O(n)이다.
+제출해보면 Solution이 더 빠르다.
+26*C1 < 2*C2 인건가? 둘다 몇 개인지 세는건데 이상하다. dict 조작이 오래 걸리나?
+</pre><br>
