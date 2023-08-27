@@ -7,10 +7,11 @@ tags: AWS MGN DMS
 
 (modified)
 
-A short post about Application Migration Service (MGN) and Database Migration Service (DMS). In my opinion, database migration should be done first.
+A short post about Application Migration Service (MGN) and Database Migration Service (DMS).
 
-<details>
-<summary><b>MGN</b></summary>
+In my opinion, database migration should be done first.
+
+**MGN**
 
 |Status|Todo|Region|Service|
 |---|---|---|---|
@@ -21,14 +22,8 @@ A short post about Application Migration Service (MGN) and Database Migration Se
 |Cutover in progress|test something again|Target||
 |Cutover complete||||
 
-</details>
-
-<details>
-<summary><b>DMS</b></summary>
+**DMS**
 
 1. (Create replication instance ?)
 1. Create endpoints, both source and target. (*EC2: Server name = DNS name)
 1. Create task
-
-</details>
-
