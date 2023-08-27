@@ -1,5 +1,5 @@
-# 메모장
-개발에 대하여 메모하는 페이지 입니다.
+# Memo
+Memo about development, AWS, etc.
 
 <ul>
   {% for post in site.posts %}
